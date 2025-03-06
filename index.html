@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="input">
+                <input type="number" id="operand1">
+                <select id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" id="operand2">
+            </div>
+            <button onclick="calculate()">ПОДСЧИТАТЬ</button>
+            <div id="history">
+                <div id="previous"></div>
+                <div id="current"></div>
+            </div>
+        </div>
+    </body>
+</html>
