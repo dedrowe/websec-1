@@ -7,17 +7,17 @@
     <body>
         <div class="container">
             <div class="input">
-                <input type="number" id="operand1">
-                <select id="operator">
+                <input type="number" id="operand1" class="bordered">
+                <select id="operator" class="bordered">
                     <option value="+">+</option>
                     <option value="-">-</option>
                     <option value="*">*</option>
                     <option value="/">/</option>
                 </select>
-                <input type="number" id="operand2">
+                <input type="number" id="operand2" class="bordered">
             </div>
-            <button onclick="calculate()">ПОДСЧИТАТЬ</button>
-            <div id="history">
+            <button onclick="calculate()" class="bordered">ПОДСЧИТАТЬ</button>
+            <div id="history" class="bordered">
                 <div id="previous"></div>
                 <div id="current"></div>
             </div>

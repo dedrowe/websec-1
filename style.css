@@ -1,11 +1,7 @@
-body {
-    display: flex;
-}
-
 .container {
     background-color: #baffc2;
     padding: 20px;
-    width: 1500px;
+    max-width: 900px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -21,11 +17,10 @@ body {
     gap: 30px;
 }
 
-input, select {
+.bordered {
     border: 1px dashed #ff6f61;
     border-radius: 10px;
     background-color: #baffc2;
-    padding-left: 10px;
     color: #ff6f61;
 }
 
@@ -43,21 +38,22 @@ input {
 }
 
 button {
-    border: 1px dashed #ff6f61;
-    border-radius: 10px;
     padding: 10px;
     font-size: 16px;
     margin-bottom: 20px;
-    background-color: #baffc2;
-    color: #ff6f61;
     width: 150px;
 }
 
 #history {
-    border: 1px dashed #ff6f61;
-    border-radius: 10px;
     padding: 10px;
     min-height: 50px;
     width: 90%;
-    color: #ff6f61;
+}
+
+@media (max-width: 800px) {
+
+    .input {
+        flex-direction: column;
+        align-items: center;
+    }
 }
